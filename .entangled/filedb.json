@@ -1,0 +1,56 @@
+{
+  "version": "2.0.5",
+  "files": [
+    {
+      "path": "src/lib.rs",
+      "deps": [
+        "docs/index.md"
+      ],
+      "modified": "2024-07-17T10:49:07.702344",
+      "hexdigest": "c97282a1fa4866a96b1be336f8dfd932a149abf75e4db9ea2decda05a411ce84",
+      "size": 233
+    },
+    {
+      "path": "docs/index.md",
+      "deps": null,
+      "modified": "2024-07-17T11:03:26.259836",
+      "hexdigest": "d7761949c206660e4ef56352bd65089cb0369d1c7c2f9abb6616c00315b87b0a",
+      "size": 622
+    },
+    {
+      "path": ".entangled/tasks.json",
+      "deps": [
+        "docs/index.md",
+        "docs/index.md"
+      ],
+      "modified": "2024-07-17T11:03:26.286836",
+      "hexdigest": "6f872be9db6e751b9255a018d507332d1ea90e7af9ca307a5aba233dfb4e7a28",
+      "size": 857
+    },
+    {
+      "path": "scripts/build.sh",
+      "deps": [
+        "docs/index.md"
+      ],
+      "modified": "2024-07-17T11:03:26.278836",
+      "hexdigest": "3eea7a37e6020c0588d0a6b85a312c542543c15f717f849b28dfbee5cf780425",
+      "size": 153
+    },
+    {
+      "path": "scripts/deploy.sh",
+      "deps": [
+        "docs/index.md"
+      ],
+      "modified": "2024-07-17T11:03:26.285836",
+      "hexdigest": "b96ff42e26971333df123db0269a089836dac3dab4a361d31a775cff1c4d8222",
+      "size": 251
+    }
+  ],
+  "source": [],
+  "target": [
+    "scripts/deploy.sh",
+    ".entangled/tasks.json",
+    "src/lib.rs",
+    "scripts/build.sh"
+  ]
+}

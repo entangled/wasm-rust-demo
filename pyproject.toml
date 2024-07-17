@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "wasm-entangled-demo"
+version = "0.1.0"
+description = "Build env for documentation"
+authors = ["Johan Hidding <j.hidding@esciencecenter.nl>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+entangled-cli = "^2.0.5"
+mkdocs-material = "^9.5.29"
+mkdocs-entangled-plugin = "^0.4.0"
+mkdocs-macros-plugin = "^1.0.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.brei]
+include = [".entangled/tasks.json"]
