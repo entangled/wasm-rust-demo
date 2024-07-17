@@ -1,20 +1,27 @@
 # Introduction
 
+<script type="module">
+   import init, { greet } from './js/wasm_entangled_demo.js';
+
+   async function run() {
+     await init();
+     greet();
+   }
+
+   run();
+</script>
+
+<div id=demo>
+</div>
+
 ## Building
 
 ``` {.bash .task file=scripts/build.sh}
 #| requires: src/lib.rs Cargo.toml
-#| creates: pkg/wasm_entangled_demo.js
-
-wasm-pack build
-```
-
-``` {.bash .task file=scripts/deploy.sh}
-#| requires: pkg/wasm_entangled_demo.js pkg/wasm_entangled_demo_bg.wasm
 #| creates: docs/js/wasm_entangled_demo.js docs/js/wasm_entangled_demo_bg.wasm
 #| collect: build
 
-cp pkg/* docs/js/
+wasm-pack build --target web --out-dir docs/js
 ```
 
 ## Source code

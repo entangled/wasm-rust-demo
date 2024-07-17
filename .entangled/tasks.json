@@ -3,7 +3,8 @@
     {
       "description": null,
       "creates": [
-        "pkg/wasm_entangled_demo.js"
+        "docs/js/wasm_entangled_demo.js",
+        "docs/js/wasm_entangled_demo_bg.wasm"
       ],
       "requires": [
         "src/lib.rs",
@@ -14,22 +15,6 @@
       "stdin": null,
       "script": null,
       "path": "scripts/build.sh"
-    },
-    {
-      "description": null,
-      "creates": [
-        "docs/js/wasm_entangled_demo.js",
-        "docs/js/wasm_entangled_demo_bg.wasm"
-      ],
-      "requires": [
-        "pkg/wasm_entangled_demo.js",
-        "pkg/wasm_entangled_demo_bg.wasm"
-      ],
-      "runner": "bash",
-      "stdout": null,
-      "stdin": null,
-      "script": null,
-      "path": "scripts/deploy.sh"
     },
     {
       "name": "build",
